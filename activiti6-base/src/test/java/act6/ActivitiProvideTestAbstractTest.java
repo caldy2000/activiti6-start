@@ -32,7 +32,7 @@ public class ActivitiProvideTestAbstractTest {
 		RepositoryService repositoryService = activitiRule.getRepositoryService();
 		RuntimeService runtimeService = activitiRule.getRuntimeService();
 		ProcessDefinition process = repositoryService.createProcessDefinitionQuery()
-		.processDefinitionId("vacationRequestUnitTest").singleResult();
+		.singleResult();
 		Assert.assertNotNull(process);
 		
 		TaskService taskService = activitiRule.getTaskService();

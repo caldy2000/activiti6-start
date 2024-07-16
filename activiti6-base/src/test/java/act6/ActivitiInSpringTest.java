@@ -1,6 +1,7 @@
 package act6;
 
 import org.activiti.engine.ProcessEngine;
+import org.activiti.engine.RepositoryService;
 import org.activiti.spring.ProcessEngineFactoryBean;
 import org.activiti.spring.SpringProcessEngineConfiguration;
 import org.junit.runner.RunWith;
@@ -13,6 +14,11 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration
 @Configuration
 public class ActivitiInSpringTest {
+	
+	@Bean
+	public RepositoryService repositoryService() {
+		return null;
+	}
 
 	/**
 	 * 待配置
