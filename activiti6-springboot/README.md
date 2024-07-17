@@ -1,0 +1,4 @@
+# Activiti6 springboot
+act支持springboot，根据数据源信息自动配置数据源并自动配置流程引擎。
+
+基于数据库管理流程时，需要在配置中关闭act自动扫描xml流程文件
